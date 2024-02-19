@@ -1,4 +1,4 @@
-From 825d4aa02a9a9f98cb84d8795c8b3e0709ff4752 Mon Sep 17 00:00:00 2001
+From 223de150d50c725df65841024490d2123fddef48 Mon Sep 17 00:00:00 2001
 From: Eter Lu <i@ziip.ink>
 Date: Sat, 10 Jun 2023 13:52:16 +0800
 Subject: [PATCH] Change name to Cryooo
@@ -65,7 +65,7 @@ index bdccbd78..979b89b8 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/bootstrap/pom.xml b/bootstrap/pom.xml
-index 672a813d..bb018c70 100644
+index 7fbac761..6270bd1a 100644
 --- a/bootstrap/pom.xml
 +++ b/bootstrap/pom.xml
 @@ -4,19 +4,19 @@
@@ -486,7 +486,7 @@ index 5e9d29d7..67fd5867 100644
  
      <dependencies>
 diff --git a/pom.xml b/pom.xml
-index 164664f8..b165ddc1 100644
+index cb5c42d4..a7e114e0 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -4,31 +4,30 @@
@@ -561,7 +561,7 @@ index 164664f8..b165ddc1 100644
          <build.number>unknown</build.number>
          <lombok.version>1.18.30</lombok.version>
 diff --git a/protocol/pom.xml b/protocol/pom.xml
-index 12096614..08e942eb 100644
+index 76a3510d..a0f520bb 100644
 --- a/protocol/pom.xml
 +++ b/protocol/pom.xml
 @@ -4,18 +4,18 @@
@@ -587,8 +587,8 @@ index 12096614..08e942eb 100644
 +    <name>Cryooo-Protocol</name>
      <description>Minimal implementation of the Minecraft protocol for use in Waterfall</description>
  
-     <!-- We really shouldn't depend on external repositories, but at least this is the Central staging one -->
-@@ -41,8 +41,8 @@
+     <!-- We really shouldn't depend on external repositories -->
+@@ -35,8 +35,8 @@
              <scope>compile</scope>
          </dependency>
          <dependency>
@@ -710,5 +710,5 @@ index 4e9bd6cc..3c569b6e 100644
              <scope>compile</scope>
          </dependency>
 -- 
-2.39.2 (Apple Git-143)
+2.39.3 (Apple Git-145)
 
