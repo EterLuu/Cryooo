@@ -1,4 +1,4 @@
-From 98d983e4bc4bd5bd781b7f42314eb47561480ee4 Mon Sep 17 00:00:00 2001
+From 584409f0c2e14d819be204ab3dbfaef9faeea8f4 Mon Sep 17 00:00:00 2001
 From: Eter Lu <i@ziip.ink>
 Date: Thu, 23 Feb 2023 18:48:29 +0800
 Subject: [PATCH] Add proxy support for account authentication
@@ -39,10 +39,10 @@ index 469fe0e1..01175d20 100644
 +    int getProxyPort();
  }
 diff --git a/proxy/pom.xml b/proxy/pom.xml
-index 2006e3df..e9e94d8f 100644
+index c4258bad..93ceb48d 100644
 --- a/proxy/pom.xml
 +++ b/proxy/pom.xml
-@@ -50,6 +50,14 @@
+@@ -46,6 +46,14 @@
              <classifier>osx-x86_64</classifier>
          </dependency>
          <!-- Waterfall End -->
@@ -107,7 +107,7 @@ index da0efa36..1951382d 100644
 +    }
  }
 diff --git a/proxy/src/main/java/net/md_5/bungee/http/HttpInitializer.java b/proxy/src/main/java/net/md_5/bungee/http/HttpInitializer.java
-index 37657c4c..a2e617fe 100644
+index 37657c4c..4a65524f 100644
 --- a/proxy/src/main/java/net/md_5/bungee/http/HttpInitializer.java
 +++ b/proxy/src/main/java/net/md_5/bungee/http/HttpInitializer.java
 @@ -6,10 +6,12 @@ import io.netty.handler.codec.http.HttpClientCodec;
@@ -135,5 +135,5 @@ index 37657c4c..a2e617fe 100644
          if ( ssl )
          {
 -- 
-2.39.2.windows.1
+2.37.1 (Apple Git-137.1)
 

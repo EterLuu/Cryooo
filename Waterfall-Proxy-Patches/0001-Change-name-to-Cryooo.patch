@@ -1,11 +1,11 @@
-From 73c29f2a89063f09bf67bd25521ded4977cb53a4 Mon Sep 17 00:00:00 2001
+From 1edcbb2fe7b6c5eae5366505a22057c5495fabd5 Mon Sep 17 00:00:00 2001
 From: Eter Lu <i@ziip.ink>
 Date: Wed, 22 Feb 2023 19:59:02 +0800
 Subject: [PATCH] Change name to Cryooo
 
 
 diff --git a/api/pom.xml b/api/pom.xml
-index 5d21fd99..3b575ea3 100644
+index 6774bed3..c5b05b52 100644
 --- a/api/pom.xml
 +++ b/api/pom.xml
 @@ -4,42 +4,42 @@
@@ -65,7 +65,7 @@ index 5d21fd99..3b575ea3 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/bootstrap/pom.xml b/bootstrap/pom.xml
-index 232b90b2..2b91b654 100644
+index 0c510f9f..998c9128 100644
 --- a/bootstrap/pom.xml
 +++ b/bootstrap/pom.xml
 @@ -4,19 +4,19 @@
@@ -458,7 +458,7 @@ index 8aff53bd..0d9eea8e 100644
          <relativePath>../pom.xml</relativePath>
      </parent>
 diff --git a/native/pom.xml b/native/pom.xml
-index caa4c4cb..6962f40a 100644
+index e137dfcc..d1346d2e 100644
 --- a/native/pom.xml
 +++ b/native/pom.xml
 @@ -4,18 +4,18 @@
@@ -486,7 +486,7 @@ index caa4c4cb..6962f40a 100644
  
      <dependencies>
 diff --git a/pom.xml b/pom.xml
-index 130670bb..b7a610e0 100644
+index 7ff4a013..7daefcb7 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -4,31 +4,30 @@
@@ -561,7 +561,7 @@ index 130670bb..b7a610e0 100644
          <build.number>unknown</build.number>
          <lombok.version>1.18.26</lombok.version>
 diff --git a/protocol/pom.xml b/protocol/pom.xml
-index 93ae5952..890de0b1 100644
+index 221469b9..7c17cb82 100644
 --- a/protocol/pom.xml
 +++ b/protocol/pom.xml
 @@ -4,18 +4,18 @@
@@ -600,7 +600,7 @@ index 93ae5952..890de0b1 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/proxy/pom.xml b/proxy/pom.xml
-index 1036a2e7..2006e3df 100644
+index d3801c9b..c4258bad 100644
 --- a/proxy/pom.xml
 +++ b/proxy/pom.xml
 @@ -4,18 +4,18 @@
@@ -627,7 +627,7 @@ index 1036a2e7..2006e3df 100644
      <description>Proxy component of the Elastic Portal Suite</description>
  
      <properties>
-@@ -71,32 +71,32 @@
+@@ -64,32 +64,32 @@
              <scope>compile</scope>
          </dependency>
          <dependency>
@@ -671,7 +671,7 @@ index 1036a2e7..2006e3df 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/query/pom.xml b/query/pom.xml
-index 72eb14e2..a206aaa6 100644
+index 81af5457..a8b6ad8e 100644
 --- a/query/pom.xml
 +++ b/query/pom.xml
 @@ -4,18 +4,18 @@
@@ -698,7 +698,7 @@ index 72eb14e2..a206aaa6 100644
      <description>Minecraft query implementation based on the Waterfall API.</description>
  
      <dependencies>
-@@ -26,8 +26,8 @@
+@@ -25,8 +25,8 @@
              <scope>compile</scope>
          </dependency>
          <dependency>
@@ -710,5 +710,5 @@ index 72eb14e2..a206aaa6 100644
              <scope>compile</scope>
          </dependency>
 -- 
-2.38.1.windows.1
+2.37.1 (Apple Git-137.1)
 
