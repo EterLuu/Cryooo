@@ -1,0 +1,714 @@
+From 73c29f2a89063f09bf67bd25521ded4977cb53a4 Mon Sep 17 00:00:00 2001
+From: Eter Lu <i@ziip.ink>
+Date: Wed, 22 Feb 2023 19:59:02 +0800
+Subject: [PATCH] Change name to Cryooo
+
+
+diff --git a/api/pom.xml b/api/pom.xml
+index 5d21fd99..3b575ea3 100644
+--- a/api/pom.xml
++++ b/api/pom.xml
+@@ -4,42 +4,42 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-parent</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-api</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-api</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-API</name>
++    <name>Cryooo-API</name>
+     <description>API implemented by the Elastic Portal Suite</description>
+ 
+     <dependencies>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-chat</artifactId>
++            <groupId>ink.ziip.cryooo</groupId>
++            <artifactId>cryooo-chat</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-config</artifactId>
++            <groupId>ink.ziip.cryooo</groupId>
++            <artifactId>cryooo-config</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-event</artifactId>
++            <groupId>ink.ziip.cryooo</groupId>
++            <artifactId>cryooo-event</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-protocol</artifactId>
++            <groupId>ink.ziip.cryooo</groupId>
++            <artifactId>cryooo-protocol</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+diff --git a/bootstrap/pom.xml b/bootstrap/pom.xml
+index 232b90b2..2b91b654 100644
+--- a/bootstrap/pom.xml
++++ b/bootstrap/pom.xml
+@@ -4,19 +4,19 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-parent</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-bootstrap</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-bootstrap</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Bootstrap</name>
+-    <description>Java 1.6 loader for Waterfall</description>
++    <name>Cryooo-Bootstrap</name>
++    <description>Java 1.6 loader for Cryooo</description>
+ 
+     <properties>
+         <maven.deploy.skip>true</maven.deploy.skip>
+@@ -29,15 +29,15 @@
+ 
+     <dependencies>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-proxy</artifactId>
++            <groupId>ink.ziip.cryooo</groupId>
++            <artifactId>cryooo-proxy</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+     </dependencies>
+ 
+     <build>
+-        <finalName>Waterfall</finalName>
++        <finalName>Cryooo</finalName>
+         <plugins>
+             <plugin>
+                 <groupId>org.apache.maven.plugins</groupId>
+diff --git a/chat/pom.xml b/chat/pom.xml
+index 003b3f6c..1786e85a 100644
+--- a/chat/pom.xml
++++ b/chat/pom.xml
+@@ -4,18 +4,18 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-parent</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-chat</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-chat</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Chat</name>
++    <name>Cryooo-Chat</name>
+     <description>Minecraft JSON chat API intended for use with Waterfall</description>
+ 
+     <dependencies>
+diff --git a/config/pom.xml b/config/pom.xml
+index 91da386a..362cb4ed 100644
+--- a/config/pom.xml
++++ b/config/pom.xml
+@@ -4,18 +4,18 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-parent</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-config</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-config</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Config</name>
++    <name>Cryooo-Config</name>
+     <description>Generic java configuration API intended for use with Waterfall</description>
+ 
+     <dependencies>
+diff --git a/event/pom.xml b/event/pom.xml
+index ac85fc82..b48f13fc 100644
+--- a/event/pom.xml
++++ b/event/pom.xml
+@@ -4,17 +4,17 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-parent</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-event</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-event</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Event</name>
++    <name>Cryooo-Event</name>
+     <description>Generic java event dispatching API intended for use with Waterfall.</description>
+ </project>
+diff --git a/log/pom.xml b/log/pom.xml
+index d61dba6f..c1fecaf7 100644
+--- a/log/pom.xml
++++ b/log/pom.xml
+@@ -4,18 +4,18 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-parent</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-log</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-log</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Log</name>
++    <name>Cryooo-Log</name>
+     <description>Simplistic and performant java.util.Logger based logger and console API designed for use with Waterfall and Minecraft related applications.</description>
+ 
+     <dependencies>
+@@ -26,8 +26,8 @@
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-chat</artifactId>
++            <groupId>ink.ziip.cryooo</groupId>
++            <artifactId>cryooo-chat</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+diff --git a/log4j/pom.xml b/log4j/pom.xml
+index fb091698..8ad7ad40 100644
+--- a/log4j/pom.xml
++++ b/log4j/pom.xml
+@@ -3,18 +3,18 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-parent</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-log4j</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-log4j</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Log</name>
++    <name>Cryooo-Log</name>
+     <description>Simplistic and performant Log4j2 based logger and console API designed for use with Waterfall and Minecraft related applications.</description>
+ 
+     <properties>
+diff --git a/module/cmd-alert/pom.xml b/module/cmd-alert/pom.xml
+index 64d197ce..f6eb1aa6 100644
+--- a/module/cmd-alert/pom.xml
++++ b/module/cmd-alert/pom.xml
+@@ -4,14 +4,14 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-module</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-module</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module-cmd-alert</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-module-cmd-alert</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+diff --git a/module/cmd-find/pom.xml b/module/cmd-find/pom.xml
+index c4ad20de..3aff9ef9 100644
+--- a/module/cmd-find/pom.xml
++++ b/module/cmd-find/pom.xml
+@@ -4,14 +4,14 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-module</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-module</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module-cmd-find</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-module-cmd-find</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+diff --git a/module/cmd-kick/pom.xml b/module/cmd-kick/pom.xml
+index 17d3dc71..c1db6945 100644
+--- a/module/cmd-kick/pom.xml
++++ b/module/cmd-kick/pom.xml
+@@ -4,14 +4,14 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-module</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-module</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module-cmd-kick</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-module-cmd-kick</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+diff --git a/module/cmd-list/pom.xml b/module/cmd-list/pom.xml
+index 9e22202d..ab1bcea6 100644
+--- a/module/cmd-list/pom.xml
++++ b/module/cmd-list/pom.xml
+@@ -4,14 +4,14 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-module</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-module</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module-cmd-list</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-module-cmd-list</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+diff --git a/module/cmd-send/pom.xml b/module/cmd-send/pom.xml
+index 5326f925..edac07b4 100644
+--- a/module/cmd-send/pom.xml
++++ b/module/cmd-send/pom.xml
+@@ -4,14 +4,14 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-module</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-module</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module-cmd-send</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-module-cmd-send</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+diff --git a/module/cmd-server/pom.xml b/module/cmd-server/pom.xml
+index 86faab24..93ddc9c0 100644
+--- a/module/cmd-server/pom.xml
++++ b/module/cmd-server/pom.xml
+@@ -4,14 +4,14 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-module</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-module</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module-cmd-server</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-module-cmd-server</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+diff --git a/module/pom.xml b/module/pom.xml
+index 0de7979e..5903f837 100644
+--- a/module/pom.xml
++++ b/module/pom.xml
+@@ -4,19 +4,19 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-parent</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-module</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-module</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>pom</packaging>
+ 
+-    <name>Waterfall Modules</name>
+-    <description>Parent project for all Waterfall modules.</description>
++    <name>Cryooo Modules</name>
++    <description>Parent project for all Cryooo modules.</description>
+ 
+     <modules>
+         <module>cmd-alert</module>
+@@ -36,8 +36,8 @@
+ 
+     <dependencies>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-api</artifactId>
++            <groupId>ink.ziip.cryooo</groupId>
++            <artifactId>cryooo-api</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+diff --git a/module/reconnect-yaml/pom.xml b/module/reconnect-yaml/pom.xml
+index 8aff53bd..0d9eea8e 100644
+--- a/module/reconnect-yaml/pom.xml
++++ b/module/reconnect-yaml/pom.xml
+@@ -4,8 +4,8 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-module</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-module</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+diff --git a/native/pom.xml b/native/pom.xml
+index caa4c4cb..6962f40a 100644
+--- a/native/pom.xml
++++ b/native/pom.xml
+@@ -4,18 +4,18 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-parent</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-native</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-native</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Native</name>
++    <name>Cryooo-Native</name>
+     <description>Optional native code to speed up and enhance Waterfall functionality.</description>
+ 
+     <dependencies>
+diff --git a/pom.xml b/pom.xml
+index 130670bb..b7a610e0 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -4,31 +4,30 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-super</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-super</artifactId>
+         <version>dev-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-parent</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-parent</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>pom</packaging>
+ 
+-    <name>Waterfall-Parent</name>
+-    <description>Parent project for all Waterfall modules.</description>
+-    <url>https://github.com/WaterfallMC/Waterfall</url>
+-    <inceptionYear>2015</inceptionYear>
+-    <organization>
+-        <name>WaterfallMC</name>
+-        <url>https://github.com/WaterfallMC</url>
+-    </organization>
++    <name>Cryooo-Parent</name>
++    <description>Parent project for all Cryooo modules.</description>
+     <licenses>
+         <license>
+             <name>Modified BSD 3-Clause License</name>
+             <url>https://github.com/SpigotMC/BungeeCord/blob/master/LICENSE</url>
+             <distribution>repo</distribution>
+         </license>
++        <license>
++            <name>MIT License</name>
++            <url>https://github.com/PaperMC/Waterfall/blob/master/LICENSE.txt</url>
++            <distribution>repo</distribution>
++        </license>
+     </licenses>
+ 
+     <developers>
+@@ -65,27 +64,6 @@
+         <module>native</module>
+     </modules>
+ 
+-    <scm>
+-        <connection>scm:git:git@github.com:com:WaterfallMC/Waterfall.git</connection>
+-        <developerConnection>scm:git:git@github.com:WaterfallMC/Waterfall.git</developerConnection>
+-        <url>git@github.com:WaterfallMC/Waterfall.git</url>
+-    </scm>
+-    <issueManagement>
+-        <system>GitHub</system>
+-        <url>https://github.com/PaperMC/Waterfall/issues</url>
+-    </issueManagement>
+-
+-    <distributionManagement>
+-        <repository>
+-            <id>papermc-releases</id>
+-            <url>https://papermc.io/repo/repository/maven-releases/</url>
+-        </repository>
+-        <snapshotRepository>
+-            <id>papermc-snapshots</id>
+-            <url>https://papermc.io/repo/repository/maven-snapshots/</url>
+-        </snapshotRepository>
+-    </distributionManagement>
+-
+     <properties>
+         <build.number>unknown</build.number>
+         <lombok.version>1.18.26</lombok.version>
+diff --git a/protocol/pom.xml b/protocol/pom.xml
+index 93ae5952..890de0b1 100644
+--- a/protocol/pom.xml
++++ b/protocol/pom.xml
+@@ -4,18 +4,18 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-parent</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-protocol</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-protocol</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Protocol</name>
++    <name>Cryooo-Protocol</name>
+     <description>Minimal implementation of the Minecraft protocol for use in Waterfall</description>
+ 
+     <!-- We really shouldn't depend on external repositories, but at least this is the Central staging one -->
+@@ -41,8 +41,8 @@
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-chat</artifactId>
++            <groupId>ink.ziip.cryooo</groupId>
++            <artifactId>cryooo-chat</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+diff --git a/proxy/pom.xml b/proxy/pom.xml
+index 1036a2e7..2006e3df 100644
+--- a/proxy/pom.xml
++++ b/proxy/pom.xml
+@@ -4,18 +4,18 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-parent</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-proxy</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-proxy</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Proxy</name>
++    <name>Cryooo-Proxy</name>
+     <description>Proxy component of the Elastic Portal Suite</description>
+ 
+     <properties>
+@@ -71,32 +71,32 @@
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-api</artifactId>
++            <groupId>ink.ziip.cryooo</groupId>
++            <artifactId>cryooo-api</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-log4j</artifactId>
++            <groupId>ink.ziip.cryooo</groupId>
++            <artifactId>cryooo-log4j</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-native</artifactId>
++            <groupId>ink.ziip.cryooo</groupId>
++            <artifactId>cryooo-native</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-protocol</artifactId>
++            <groupId>ink.ziip.cryooo</groupId>
++            <artifactId>cryooo-protocol</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-query</artifactId>
++            <groupId>ink.ziip.cryooo</groupId>
++            <artifactId>cryooo-query</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+diff --git a/query/pom.xml b/query/pom.xml
+index 72eb14e2..a206aaa6 100644
+--- a/query/pom.xml
++++ b/query/pom.xml
+@@ -4,18 +4,18 @@
+     <modelVersion>4.0.0</modelVersion>
+ 
+     <parent>
+-        <groupId>io.github.waterfallmc</groupId>
+-        <artifactId>waterfall-parent</artifactId>
++        <groupId>ink.ziip.cryooo</groupId>
++        <artifactId>cryooo-parent</artifactId>
+         <version>1.19-R0.1-SNAPSHOT</version>
+         <relativePath>../pom.xml</relativePath>
+     </parent>
+ 
+-    <groupId>io.github.waterfallmc</groupId>
+-    <artifactId>waterfall-query</artifactId>
++    <groupId>ink.ziip.cryooo</groupId>
++    <artifactId>cryooo-query</artifactId>
+     <version>1.19-R0.1-SNAPSHOT</version>
+     <packaging>jar</packaging>
+ 
+-    <name>Waterfall-Query</name>
++    <name>Cryooo-Query</name>
+     <description>Minecraft query implementation based on the Waterfall API.</description>
+ 
+     <dependencies>
+@@ -26,8 +26,8 @@
+             <scope>compile</scope>
+         </dependency>
+         <dependency>
+-            <groupId>io.github.waterfallmc</groupId>
+-            <artifactId>waterfall-api</artifactId>
++            <groupId>ink.ziip.cryooo</groupId>
++            <artifactId>cryooo-api</artifactId>
+             <version>${project.version}</version>
+             <scope>compile</scope>
+         </dependency>
+-- 
+2.38.1.windows.1
+
