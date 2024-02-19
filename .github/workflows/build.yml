@@ -14,9 +14,9 @@ jobs:
         java: [17,8]
       fail-fast: true
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Install Java ${{ matrix.java }}
-        uses: actions/setup-java@v2
+        uses: actions/setup-java@v3
         with:
           java-version: ${{ matrix.java }}
           distribution: 'adopt'
@@ -31,7 +31,7 @@ jobs:
       - name: build
         run: mvn clean install javadoc:javadoc -B
       - name: upload
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: Cryooo [Built with Java ${{ matrix.java }}]
           path: ./Cryooo-Proxy/bootstrap/target/Cryooo.jar
